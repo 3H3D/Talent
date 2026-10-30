@@ -22,7 +22,7 @@ body {
     flex-direction: column;
 }
 
-/* 1. Logo Tetap Sejajar di Kiri (Baik di HP maupun Laptop) */
+/* 1. Logo Tetap Sejajar di Kiri */
 .logo-section {
     display: flex;
     align-items: center;
@@ -95,7 +95,6 @@ body {
 }
 
 .form-group input,
-.form-group select,
 .form-group textarea {
     width: 100%;
     padding: 13px 15px;
@@ -108,6 +107,26 @@ body {
     transition: all 0.3s ease;
 }
 
+/* KHUSUS DROPDOWN (SELECT): Latar Putih & Teks Hitam */
+.form-group select {
+    width: 100%;
+    padding: 13px 15px;
+    background-color: #ffffff; /* Latar putih untuk tombol dropdown */
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #000000;            /* Teks hitam */
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-group select option {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: #4a5568;
@@ -118,10 +137,8 @@ body {
 .form-group textarea:focus {
     border-color: #66fcf1;
     box-shadow: 0 0 12px rgba(102, 252, 241, 0.25);
-    background-color: #050608;
 }
 
-/* Menjaga 2 kolom sejajar di laptop dan HP */
 .row {
     display: flex;
     gap: 18px;
@@ -137,7 +154,7 @@ body {
     margin-top: 5px;
 }
 
-/* 3. Tombol Submit (Latar Putih, Teks Hitam) */
+/* 3. TOMBOL SUBMIT UTAMA: Latar Putih, Teks Hitam */
 .button-container {
     margin-top: 30px;
 }
@@ -146,7 +163,7 @@ body {
     width: 100%;
     padding: 16px;
     background-color: #ffffff; /* Latar belakang putih */
-    color: #000000;            /* Teks warna hitam */
+    color: #000000;            /* Teks tulisan hitam */
     border: none;
     border-radius: 8px;
     font-weight: 800;
@@ -159,20 +176,24 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #e6e6e6; /* Sedikit keabu-abuan saat disentuh/hover */
+    background-color: #e6e6e6; 
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
     transform: translateY(-1px);
 }
 
-/* Penyesuaian Responsif untuk Layar HP */
+/* Footer & Responsif */
+.footer-text {
+    text-align: center;
+    font-size: 11px;
+    color: #4b5563;
+    margin-top: 25px;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 600px) {
-    body {
-        padding: 20px 10px;
-    }
     .form-container {
         padding: 25px 15px;
     }
-    /* Menjaga layout dan margin tetap proporsional di HP */
     .row {
         gap: 12px;
     }
