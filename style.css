@@ -22,7 +22,7 @@ body {
     flex-direction: column;
 }
 
-/* 1. Styling Bagian Logo di Sebelah Kiri */
+/* 1. Logo Tetap Sejajar di Kiri (Baik di HP maupun Laptop) */
 .logo-section {
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@ body {
     text-transform: uppercase;
 }
 
-/* 2. Styling Kotak Formulir Utama */
+/* 2. Kotak Formulir Utama */
 .form-container {
     background-color: #12161f;
     width: 100%;
@@ -121,6 +121,7 @@ body {
     background-color: #050608;
 }
 
+/* Menjaga 2 kolom sejajar di laptop dan HP */
 .row {
     display: flex;
     gap: 18px;
@@ -136,7 +137,7 @@ body {
     margin-top: 5px;
 }
 
-/* 3. Styling Tombol Terpisah & Menarik */
+/* 3. Tombol Submit (Latar Putih, Teks Hitam) */
 .button-container {
     margin-top: 30px;
 }
@@ -144,8 +145,8 @@ body {
 .btn-submit {
     width: 100%;
     padding: 16px;
-    background: linear-gradient(135deg, #66fcf1 0%, #45a29e 100%);
-    color: #0b0c10;
+    background-color: #ffffff; /* Latar belakang putih */
+    color: #000000;            /* Teks warna hitam */
     border: none;
     border-radius: 8px;
     font-weight: 800;
@@ -154,32 +155,25 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 252, 241, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
 .btn-submit:hover {
-    background: linear-gradient(135deg, #45a29e 0%, #66fcf1 100%);
-    box-shadow: 0 6px 20px rgba(102, 252, 241, 0.5);
+    background-color: #e6e6e6; /* Sedikit keabu-abuan saat disentuh/hover */
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
     transform: translateY(-1px);
 }
 
-.footer-text {
-    text-align: center;
-    font-size: 11px;
-    color: #4b5563;
-    margin-top: 25px;
-    letter-spacing: 0.5px;
-}
-
+/* Penyesuaian Responsif untuk Layar HP */
 @media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
     .form-container {
         padding: 25px 15px;
     }
+    /* Menjaga layout dan margin tetap proporsional di HP */
     .row {
-        flex-direction: column;
-        gap: 0;
-    }
-    .logo-section {
-        justify-content: center;
+        gap: 12px;
     }
 }
