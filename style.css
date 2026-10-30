@@ -7,7 +7,7 @@
 
 body {
     background-color: #07080a;
-    color: #d1d5db;
+    color: #111827;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,34 +49,34 @@ body {
     text-transform: uppercase;
 }
 
-/* 2. Kotak Formulir Utama */
+/* 2. KOTAK PERSEGI BESAR UTAMA: BERUBAH JADI PUTIH DENGAN TEKS HITAM */
 .form-container {
-    background-color: #12161f;
+    background-color: #ffffff; /* Latar kotak besar jadi putih */
     width: 100%;
     padding: 40px;
     border-radius: 16px;
-    border: 1px solid rgba(69, 162, 158, 0.3);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+    border: 1px solid #d1d5db;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
 }
 
 .header {
     text-align: center;
     margin-bottom: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #e5e7eb;
     padding-bottom: 20px;
 }
 
 .header h1 {
-    color: #66fcf1;
+    color: #000000; /* Judul utama dalam kotak jadi hitam */
     font-size: 22px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .header p {
     font-size: 13px;
-    color: #9ca3af;
+    color: #4b5563; /* Subteks abu-abu gelap */
     margin-top: 6px;
 }
 
@@ -88,37 +88,24 @@ body {
     display: block;
     margin-bottom: 8px;
     font-size: 12px;
-    color: #66fcf1;
-    font-weight: 600;
+    color: #1f2937; /* Label teks jadi hitam/abu gelap */
+    font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
+/* Kolom input, select, textarea dengan latar putih/terang & teks hitam */
 .form-group input,
+.form-group select,
 .form-group textarea {
     width: 100%;
     padding: 13px 15px;
-    background-color: #0b0c10;
-    border: 1px solid #2d3748;
+    background-color: #f9fafb; /* Latar kolom input sangat terang */
+    border: 1px solid #d1d5db;
     border-radius: 8px;
-    color: #ffffff;
+    color: #000000;            /* Teks ketikan jadi hitam */
     font-size: 14px;
     outline: none;
-    transition: all 0.3s ease;
-}
-
-/* KHUSUS DROPDOWN (SELECT): Latar Putih & Teks Hitam */
-.form-group select {
-    width: 100%;
-    padding: 13px 15px;
-    background-color: #ffffff; /* Latar putih untuk tombol dropdown */
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    color: #000000;            /* Teks hitam */
-    font-weight: 600;
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -129,14 +116,15 @@ body {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #4a5568;
+    color: #9ca3af;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #66fcf1;
-    box-shadow: 0 0 12px rgba(102, 252, 241, 0.25);
+    border-color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .row {
@@ -154,7 +142,7 @@ body {
     margin-top: 5px;
 }
 
-/* 3. TOMBOL SUBMIT UTAMA: Latar Putih, Teks Hitam */
+/* 3. TOMBOL SUBMIT: Tetap Putih dengan Teks Hitam (atau kontras dengan kotak) */
 .button-container {
     margin-top: 30px;
 }
@@ -162,8 +150,8 @@ body {
 .btn-submit {
     width: 100%;
     padding: 16px;
-    background-color: #ffffff; /* Latar belakang putih */
-    color: #000000;            /* Teks tulisan hitam */
+    background-color: #000000; /* Tombol jadi hitam agar kontras dengan kotak putih */
+    color: #ffffff;            /* Teks tombol jadi putih */
     border: none;
     border-radius: 8px;
     font-weight: 800;
@@ -172,12 +160,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-submit:hover {
-    background-color: #e6e6e6; 
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+    background-color: #374151; 
     transform: translateY(-1px);
 }
 
