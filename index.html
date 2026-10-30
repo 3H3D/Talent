@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talent Submission - Ferwap Music Entertainment</title>
-    <!-- Hubungkan ke CSS External -->
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,81 +17,81 @@
 
     <form id="talentForm" action="#" method="POST">
         
-        <!-- Data Musisi -->
+        <!-- Musician Information -->
         <div class="row">
             <div class="col form-group">
-                <label for="fullName">Nama Lengkap</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Sesuai Identitas Resmi" required>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="As shown on official ID" required>
             </div>
             <div class="col form-group">
-                <label for="stageName">Nama Panggung / Alias</label>
-                <input type="text" id="stageName" name="stageName" placeholder="Contoh: 3H3D, ANDER" required>
+                <label for="stageName">Stage Name / Alias</label>
+                <input type="text" id="stageName" name="stageName" placeholder="e.g. 3H3D, ANDER" required>
             </div>
         </div>
 
         <div class="row">
             <div class="col form-group">
-                <label for="email">Email</label>
+                <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="email@domain.com" required>
             </div>
             <div class="col form-group">
-                <label for="phone">Nomor HP / WhatsApp</label>
+                <label for="phone">Phone / WhatsApp</label>
                 <input type="tel" id="phone" name="phone" placeholder="+62 8..." required>
             </div>
         </div>
 
-        <!-- Peran & Genre -->
+        <!-- Role & Genre -->
         <div class="row">
             <div class="col form-group">
-                <label for="role">Peran Utama</label>
+                <label for="role">Primary Role</label>
                 <select id="role" name="role" required>
-                    <option value="">-- Pilih Peran --</option>
-                    <option value="solo_singer">Penyanyi Solo</option>
-                    <option value="songwriter">Penulis Lagu (Songwriter)</option>
+                    <option value="">-- Select Role --</option>
+                    <option value="solo_singer">Solo Vocalist</option>
+                    <option value="songwriter">Songwriter</option>
                     <option value="producer">Music Producer / Beatmaker</option>
-                    <option value="band_group">Grup / Duo / Band</option>
+                    <option value="band_group">Group / Duo / Band</option>
                 </select>
             </div>
             <div class="col form-group">
-                <label for="genre">Genre Utama</label>
-                <input type="text" id="genre" name="genre" placeholder="Pop, Hip-Hop, R&B, dll." required>
+                <label for="genre">Primary Genre</label>
+                <input type="text" id="genre" name="genre" placeholder="Pop, Hip-Hop, R&B, etc." required>
             </div>
         </div>
 
-        <!-- Link Demo Musik -->
+        <!-- Demo Music Link -->
         <div class="form-group">
-            <label for="demoUrl">Link Demo Karya (Google Drive / Dropbox / Soundcloud)</label>
+            <label for="demoUrl">Demo Track Link (Google Drive / Dropbox / SoundCloud)</label>
             <input type="url" id="demoUrl" name="demoUrl" placeholder="https://drive.google.com/..." required>
-            <p class="note">*Pastikan akses link diatur ke 'Public / Anyone with link' agar tim seleksi bisa mendengarkan.</p>
+            <p class="note">*Please ensure link permissions are set to "Public / Anyone with the link".</p>
         </div>
 
-        <!-- Metadata Tambahan (Opsional) -->
+        <!-- Additional Metadata (Optional) -->
         <div class="row">
             <div class="col form-group">
-                <label for="isni">Nomor ISNI (Jika Ada)</label>
+                <label for="isni">ISNI Number (If available)</label>
                 <input type="text" id="isni" name="isni" placeholder="0000 0001 ...">
             </div>
             <div class="col form-group">
-                <label for="ipi">Nomor IPI/CAE (Jika Ada)</label>
+                <label for="ipi">IPI/CAE Number (If available)</label>
                 <input type="text" id="ipi" name="ipi" placeholder="I-000000000-0">
             </div>
         </div>
 
-        <!-- Catatan / Biografi Singkat -->
+        <!-- Message / Short Bio -->
         <div class="form-group">
-            <label for="message">Pesan Singkat / Deskripsi Karya</label>
-            <textarea id="message" name="message" rows="4" placeholder="Ceritakan singkat tentang lagu atau visi musik kamu..."></textarea>
+            <label for="message">Short Message / Track Description</label>
+            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your track, musical vision, or goals..."></textarea>
         </div>
 
-        <button type="submit" class="btn-submit">Kirim Demo Ke Ferwap Music</button>
+        <button type="submit" class="btn-submit">Submit Demo to Ferwap Music</button>
     </form>
 
     <div class="footer-text">
-        &copy; Ferwap Music Entertainment. Hak Cipta & Data Dilindungi.
+        &copy; Ferwap Music Entertainment. All Rights Reserved & Data Protected.
     </div>
 </div>
 
-<!-- Hubungkan ke JS External -->
+<!-- Link to External JS -->
 <script src="script.js"></script>
 </body>
 </html>
