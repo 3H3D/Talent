@@ -11,6 +11,10 @@
 
 <div class="container">
     <div class="header">
+        <!-- Tambahan Logo Web Utama -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Ferwap Music Logo" class="brand-logo">
+        </div>
         <h1>Ferwap Music Entertainment</h1>
         <p>Talent Scouting & Demo Submission Portal</p>
     </div>
@@ -24,7 +28,7 @@
                 <input type="text" id="fullName" name="fullName" placeholder="As shown on official ID" required>
             </div>
             <div class="col form-group">
-                <label for="stageName">Stage Name / Alias</label>
+                <label for="stageName">Stage Name / Artist Name</label>
                 <input type="text" id="stageName" name="stageName" placeholder="e.g. 3H3D, ANDER" required>
             </div>
         </div>
@@ -45,8 +49,8 @@
             <div class="col form-group">
                 <label for="role">Primary Role</label>
                 <select id="role" name="role" required>
-                    <option value="">-- Select Role --</option>
-                    <option value="solo_singer">Solo Vocalist</option>
+                    <option value="">-- Select Your Role --</option>
+                    <option value="solo_singer">Solo Vocalist / Singer</option>
                     <option value="songwriter">Songwriter</option>
                     <option value="producer">Music Producer / Beatmaker</option>
                     <option value="band_group">Group / Duo / Band</option>
@@ -54,7 +58,7 @@
             </div>
             <div class="col form-group">
                 <label for="genre">Primary Genre</label>
-                <input type="text" id="genre" name="genre" placeholder="Pop, Hip-Hop, R&B, etc." required>
+                <input type="text" id="genre" name="genre" placeholder="Pop, Hip-Hop, R&B, Acoustic, etc." required>
             </div>
         </div>
 
@@ -65,29 +69,23 @@
             <p class="note">*Please ensure link permissions are set to "Public / Anyone with the link".</p>
         </div>
 
-        <!-- Additional Metadata (Optional) -->
-        <div class="row">
-            <div class="col form-group">
-                <label for="isni">ISNI Number (If available)</label>
-                <input type="text" id="isni" name="isni" placeholder="0000 0001 ...">
-            </div>
-            <div class="col form-group">
-                <label for="ipi">IPI/CAE Number (If available)</label>
-                <input type="text" id="ipi" name="ipi" placeholder="I-000000000-0">
-            </div>
+        <!-- Social Media / Portfolio -->
+        <div class="form-group">
+            <label for="socialMedia">Social Media / Spotify / YouTube Profile</label>
+            <input type="text" id="socialMedia" name="socialMedia" placeholder="Instagram / TikTok / YouTube link or username">
         </div>
 
         <!-- Message / Short Bio -->
         <div class="form-group">
-            <label for="message">Short Message / Track Description</label>
-            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your track, musical vision, or goals..."></textarea>
+            <label for="message">Short Bio or Track Story</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us a little bit about yourself or the song you are submitting..."></textarea>
         </div>
 
         <button type="submit" class="btn-submit">Submit Demo to Ferwap Music</button>
     </form>
 
     <div class="footer-text">
-        &copy; Ferwap Music Entertainment. All Rights Reserved & Data Protected.
+        &copy; Ferwap Music Entertainment. All Rights Reserved.
     </div>
 </div>
 
