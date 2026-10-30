@@ -29,32 +29,50 @@ body {
     text-align: center;
     margin-bottom: 25px;
     border-bottom: 1px solid #333;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
-/* Pengaturan Tampilan Logo */
+/* Tampilan Logo Bulat Putih + Teks Merah Sesuai Web Utama ferwap.com */
 .logo-container {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .brand-logo {
-    width: 70px;          /* Sesuaikan ukuran lebar logo */
-    height: auto;         /* Menjaga proporsi gambar */
-    border-radius: 50%;   /* Opsional: Membuat logo jadi bulat, hapus baris ini kalau logonya kotak */
-    border: 2px solid #66fcf1; /* Memberikan aksen garis neon tipis di pinggir logo */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    object-fit: contain;
+    padding: 5px;
+    border: 2px solid #e60000;
+    box-shadow: 0 0 12px rgba(230, 0, 0, 0.4);
+}
+
+.brand-subtext {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .header h1 {
     color: #66fcf1;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-top: 6px;
 }
 
 .header p {
-    font-size: 14px;
+    font-size: 13px;
     color: #c5c6c7;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .form-group {
